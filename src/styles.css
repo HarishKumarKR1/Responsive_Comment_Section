@@ -1,0 +1,80 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-comment {
+  width: 90%;
+  margin: 2px;
+  border: solid 1px red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  width: 80%;
+  margin: 5px;
+  border: none;
+  background: transparent;
+  color: white;
+}
+.button {
+  width: 80%;
+  text-align: right;
+  border: none;
+  background: none;
+  color: blue;
+}
+.comment-section {
+  width: 90%;
+  height: 60%;
+  border: solid 1px red;
+  display: flex;
+  overflow: scroll;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+}
+.comments {
+  width: 90%;
+  text-align: left;
+  color: white;
+  font-size: 1rem;
+}
+@media screen and (min-width: 600px) {
+  .comments {
+    width: 90%;
+    text-align: left;
+    color: grey;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .comments {
+    width: 90%;
+    text-align: left;
+    color: greenyellow;
+    font-size: 0.7rem;
+  }
+}
+.delete {
+  border: none;
+  background: none;
+  color: blue;
+  cursor: pointer;
+  margin: 0 2px 0 20px;
+  padding: 0;
+}
